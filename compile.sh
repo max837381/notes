@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cd /Users/max/Documents/Github/hugo-obsidian; rm -fr /Users/max/Documents/Github/notes/content/*; rm -rf /Users/max/Documents/Github/notes/public/*; /Users/max/Documents/Github/obsidian-export/target/debug/obsidian-export --frontmatter=always "/Users/max/Library/Mobile Documents/iCloud~md~obsidian/Documents/Test" "/Users/max/Documents/Github/notes/content"; go run /Users/max/Documents/Github/hugo-obsidian -input=/Users/max/Documents/Github/notes/content -output=/Users/max/Documents/Github/notes/assets/indices -index -root=/Users/max/Documents/Github/notes; (cd /Users/max/Documents/Github/notes && hugo --minify)

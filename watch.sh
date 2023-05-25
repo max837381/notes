@@ -1,0 +1,3 @@
+#!/bin/bash
+
+export GOPATH=/Users/$USER/go; export GOROOT="$(/opt/homebrew/Cellar/go/*/libexec)"; export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"; cd /Users/max/Documents/Github/notes; nodemon -w /Users/max/Library/Mobile Documents/iCloud~md~obsidian/Documents/Test -w /Users/max/Documents/Github/notes/assets/js -w /Users/max/Documents/Github/notes/assets/styles -w /Users/max/Documents/Github/notes/layouts -w /Users/max/Documents/Github/notes/config.toml -w /Users/max/Documents/Github/notes/data/config.yaml -x "/Users/max/Documents/Github/notes/compile.sh" -e md,html,js,scss,xml
